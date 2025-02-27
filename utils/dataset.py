@@ -109,8 +109,7 @@ class FaceDataset(Dataset):
         whisper_file = face_file.replace("_face.jpg", "_whisper.npy")
         whisper = np.load(whisper_file)
         # depth
-        #if random.choice([True, False]):
-        if False:
+        if random.choice([True, False]):
             depth_file = face_file.replace("_face.jpg", "_depth.jpg")
             lmk_file = face_file.replace("_face.jpg", "_lm.npy")
             
